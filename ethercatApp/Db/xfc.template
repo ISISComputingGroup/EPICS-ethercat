@@ -1,0 +1,11 @@
+# % macro, DEVICE, name of device
+# % macro, SCAN, scan rate
+# % macro, PORT, asyn port
+# % macro, CHANNEL, channel number
+
+record(longin, "$(DEVICE):MISSED")
+{
+   field(DTYP, "asynInt32")
+   field(SCAN, "$(SCAN)")
+   field(INP,  "@asyn($(PORT)_XFC$(CHANNEL))MISSED")
+}

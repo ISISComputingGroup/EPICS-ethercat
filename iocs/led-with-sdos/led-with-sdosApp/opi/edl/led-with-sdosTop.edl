@@ -1,0 +1,1167 @@
+4 0 1
+beginScreenProperties
+h 418
+major 4
+minor 0
+release 1
+w 1013
+x 0
+y 0
+bgColor index 3
+botShadowColor index 11
+btnFont "arial-bold-r-14.0"
+ctlBgColor1 index 3
+ctlBgColor2 index 14
+ctlFgColor1 index 25
+ctlFgColor2 index 0
+ctlFont "arial-bold-r-14.0"
+fgColor index 14
+font "arial-medium-r-14.0"
+showGrid
+snapToGrid
+textColor index 14
+title "Device - led-with-sdosTop"
+topShadowColor index 1
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+h 30
+major 4
+minor 0
+release 0
+w 1013
+x 0
+y 0
+
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+h 25
+major 4
+minor 0
+release 0
+w 1011
+x 0
+y 2
+fillColor index 0
+lineColor index 1
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+h 25
+major 4
+minor 0
+release 0
+w 1011
+x 1
+y 3
+fillColor index 0
+lineColor index 11
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+h 24
+major 4
+minor 2
+release 0
+w 1011
+x 1
+y 3
+bgColor index 3
+botShadowColor index 0
+button3Popup
+buttonLabel "tooltip"
+displayFileName {
+  0 "generic-tooltip"
+}
+fgColor index 14
+font "arial-bold-r-14.0"
+invisible
+numDsps 1
+numPvs 4
+setPosition {
+  0 "button"
+}
+topShadowColor index 0
+xPosOffset 5
+yPosOffset 5
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+h 25
+major 4
+minor 1
+release 0
+w 1053
+x 1
+y 3
+bgColor index 48
+fgColor index 14
+font "arial-bold-r-16.0"
+fontAlign "center"
+value {
+  "led-with-sdos Top"
+}
+endObjectProperties
+
+endGroup
+
+
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+h 105
+major 4
+minor 0
+release 0
+w 320
+x 10
+y 50
+fill
+fillColor index 5
+lineColor index 14
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+h 13
+major 4
+minor 1
+release 1
+w 70
+x 10
+y 40
+autoSize
+bgColor index 7
+border
+fgColor index 14
+font "arial-medium-r-12.0"
+value {
+  " SDO-voltage"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+h 30
+major 4
+minor 6
+release 0
+w 110
+x 169
+y 70
+bgColor index 10
+controlPv "RMTEST-LED-01:VOLTAGE_rbv"
+fgAlarm
+fgColor index 16
+font "arial-medium-r-18.0"
+fontAlign "center"
+limitsFromDb
+newPos
+noExecuteClipMask
+nullColor index 0
+objType "monitors"
+showUnits
+useHexPrefix
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+h 16
+major 4
+minor 1
+release 1
+w 75
+x 59
+y 75
+autoSize
+bgColor index 0
+fgColor index 14
+font "arial-bold-r-14.0"
+useDisplayBg
+value {
+  "Readback:"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+h 23
+major 4
+minor 1
+release 0
+w 70
+x 59
+y 105
+3d
+botShadowColor index 11
+controlPv "RMTEST-LED-01:VOLTAGE_trig"
+fgColor index 25
+font "arial-medium-r-16.0"
+offColor index 3
+offLabel "Read"
+onColor index 4
+onLabel "Read"
+pressValue "1"
+topShadowColor index 1
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+h 30
+major 10
+minor 0
+release 0
+w 110
+x 169
+y 102
+bgColor index 3
+controlPv "RMTEST-LED-01:VOLTAGE"
+fgAlarm
+fgColor index 25
+fill
+font "arial-bold-r-16.0"
+precision 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+h 105
+major 4
+minor 0
+release 0
+w 320
+x 10
+y 176
+fill
+fillColor index 5
+lineColor index 14
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+h 13
+major 4
+minor 1
+release 1
+w 70
+x 10
+y 166
+autoSize
+bgColor index 7
+border
+fgColor index 14
+font "arial-medium-r-12.0"
+value {
+  " SDO-svoltage"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+h 30
+major 4
+minor 6
+release 0
+w 110
+x 169
+y 196
+bgColor index 10
+controlPv "RMTEST-LED-01:SVOLTAGE_rbv"
+fgAlarm
+fgColor index 16
+font "arial-medium-r-18.0"
+fontAlign "center"
+limitsFromDb
+newPos
+noExecuteClipMask
+nullColor index 0
+objType "monitors"
+showUnits
+useHexPrefix
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+h 16
+major 4
+minor 1
+release 1
+w 75
+x 59
+y 201
+autoSize
+bgColor index 0
+fgColor index 14
+font "arial-bold-r-14.0"
+useDisplayBg
+value {
+  "Readback:"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+h 23
+major 4
+minor 1
+release 0
+w 70
+x 59
+y 231
+3d
+botShadowColor index 11
+controlPv "RMTEST-LED-01:SVOLTAGE_trig"
+fgColor index 25
+font "arial-medium-r-16.0"
+offColor index 3
+offLabel "Read"
+onColor index 4
+onLabel "Read"
+pressValue "1"
+topShadowColor index 1
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+h 30
+major 10
+minor 0
+release 0
+w 110
+x 169
+y 228
+bgColor index 3
+controlPv "RMTEST-LED-01:SVOLTAGE"
+fgAlarm
+fgColor index 25
+fill
+font "arial-bold-r-16.0"
+precision 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+h 105
+major 4
+minor 0
+release 0
+w 320
+x 10
+y 302
+fill
+fillColor index 5
+lineColor index 14
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+h 13
+major 4
+minor 1
+release 1
+w 70
+x 10
+y 292
+autoSize
+bgColor index 7
+border
+fgColor index 14
+font "arial-medium-r-12.0"
+value {
+  " SDO-holdcurrent"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+h 30
+major 4
+minor 6
+release 0
+w 110
+x 169
+y 322
+bgColor index 10
+controlPv "RMTEST-LED-01:HOLDCURR_rbv"
+fgAlarm
+fgColor index 16
+font "arial-medium-r-18.0"
+fontAlign "center"
+limitsFromDb
+newPos
+noExecuteClipMask
+nullColor index 0
+objType "monitors"
+showUnits
+useHexPrefix
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+h 16
+major 4
+minor 1
+release 1
+w 75
+x 59
+y 327
+autoSize
+bgColor index 0
+fgColor index 14
+font "arial-bold-r-14.0"
+useDisplayBg
+value {
+  "Readback:"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+h 23
+major 4
+minor 1
+release 0
+w 70
+x 59
+y 357
+3d
+botShadowColor index 11
+controlPv "RMTEST-LED-01:HOLDCURR_trig"
+fgColor index 25
+font "arial-medium-r-16.0"
+offColor index 3
+offLabel "Read"
+onColor index 4
+onLabel "Read"
+pressValue "1"
+topShadowColor index 1
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+h 30
+major 10
+minor 0
+release 0
+w 110
+x 169
+y 354
+bgColor index 3
+controlPv "RMTEST-LED-01:HOLDCURR"
+fgAlarm
+fgColor index 25
+fill
+font "arial-bold-r-16.0"
+precision 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+h 105
+major 4
+minor 0
+release 0
+w 320
+x 346
+y 50
+fill
+fillColor index 5
+lineColor index 14
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+h 13
+major 4
+minor 1
+release 1
+w 70
+x 346
+y 40
+autoSize
+bgColor index 7
+border
+fgColor index 14
+font "arial-medium-r-12.0"
+value {
+  " SDO-swarnlevel"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+h 30
+major 4
+minor 6
+release 0
+w 110
+x 505
+y 70
+bgColor index 10
+controlPv "RMTEST-LED-01:SUPWARNLVL_rbv"
+fgAlarm
+fgColor index 16
+font "arial-medium-r-18.0"
+fontAlign "center"
+limitsFromDb
+newPos
+noExecuteClipMask
+nullColor index 0
+objType "monitors"
+showUnits
+useHexPrefix
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+h 16
+major 4
+minor 1
+release 1
+w 75
+x 395
+y 75
+autoSize
+bgColor index 0
+fgColor index 14
+font "arial-bold-r-14.0"
+useDisplayBg
+value {
+  "Readback:"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+h 23
+major 4
+minor 1
+release 0
+w 70
+x 395
+y 105
+3d
+botShadowColor index 11
+controlPv "RMTEST-LED-01:SUPWARNLVL_trig"
+fgColor index 25
+font "arial-medium-r-16.0"
+offColor index 3
+offLabel "Read"
+onColor index 4
+onLabel "Read"
+pressValue "1"
+topShadowColor index 1
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+h 30
+major 10
+minor 0
+release 0
+w 110
+x 505
+y 102
+bgColor index 3
+controlPv "RMTEST-LED-01:SUPWARNLVL"
+fgAlarm
+fgColor index 25
+fill
+font "arial-bold-r-16.0"
+precision 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+h 105
+major 4
+minor 0
+release 0
+w 320
+x 346
+y 176
+fill
+fillColor index 5
+lineColor index 14
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+h 13
+major 4
+minor 1
+release 1
+w 70
+x 346
+y 166
+autoSize
+bgColor index 7
+border
+fgColor index 14
+font "arial-medium-r-12.0"
+value {
+  " SDO-serrorlevel"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+h 30
+major 4
+minor 6
+release 0
+w 110
+x 505
+y 196
+bgColor index 10
+controlPv "RMTEST-LED-01:SUPERRORLVL_rbv"
+fgAlarm
+fgColor index 16
+font "arial-medium-r-18.0"
+fontAlign "center"
+limitsFromDb
+newPos
+noExecuteClipMask
+nullColor index 0
+objType "monitors"
+showUnits
+useHexPrefix
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+h 16
+major 4
+minor 1
+release 1
+w 75
+x 395
+y 201
+autoSize
+bgColor index 0
+fgColor index 14
+font "arial-bold-r-14.0"
+useDisplayBg
+value {
+  "Readback:"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+h 23
+major 4
+minor 1
+release 0
+w 70
+x 395
+y 231
+3d
+botShadowColor index 11
+controlPv "RMTEST-LED-01:SUPERRORLVL_trig"
+fgColor index 25
+font "arial-medium-r-16.0"
+offColor index 3
+offLabel "Read"
+onColor index 4
+onLabel "Read"
+pressValue "1"
+topShadowColor index 1
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+h 30
+major 10
+minor 0
+release 0
+w 110
+x 505
+y 228
+bgColor index 3
+controlPv "RMTEST-LED-01:SUPERRORLVL"
+fgAlarm
+fgColor index 25
+fill
+font "arial-bold-r-16.0"
+precision 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+h 105
+major 4
+minor 0
+release 0
+w 320
+x 346
+y 302
+fill
+fillColor index 5
+lineColor index 14
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+h 13
+major 4
+minor 1
+release 1
+w 70
+x 346
+y 292
+autoSize
+bgColor index 7
+border
+fgColor index 14
+font "arial-medium-r-12.0"
+value {
+  " SDO-outwarnlevel"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+h 30
+major 4
+minor 6
+release 0
+w 110
+x 505
+y 322
+bgColor index 10
+controlPv "RMTEST-LED-01:OUTWARNLVL_rbv"
+fgAlarm
+fgColor index 16
+font "arial-medium-r-18.0"
+fontAlign "center"
+limitsFromDb
+newPos
+noExecuteClipMask
+nullColor index 0
+objType "monitors"
+showUnits
+useHexPrefix
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+h 16
+major 4
+minor 1
+release 1
+w 75
+x 395
+y 327
+autoSize
+bgColor index 0
+fgColor index 14
+font "arial-bold-r-14.0"
+useDisplayBg
+value {
+  "Readback:"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+h 23
+major 4
+minor 1
+release 0
+w 70
+x 395
+y 357
+3d
+botShadowColor index 11
+controlPv "RMTEST-LED-01:OUTWARNLVL_trig"
+fgColor index 25
+font "arial-medium-r-16.0"
+offColor index 3
+offLabel "Read"
+onColor index 4
+onLabel "Read"
+pressValue "1"
+topShadowColor index 1
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+h 30
+major 10
+minor 0
+release 0
+w 110
+x 505
+y 354
+bgColor index 3
+controlPv "RMTEST-LED-01:OUTWARNLVL"
+fgAlarm
+fgColor index 25
+fill
+font "arial-bold-r-16.0"
+precision 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+h 105
+major 4
+minor 0
+release 0
+w 320
+x 682
+y 50
+fill
+fillColor index 5
+lineColor index 14
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+h 13
+major 4
+minor 1
+release 1
+w 70
+x 682
+y 40
+autoSize
+bgColor index 7
+border
+fgColor index 14
+font "arial-medium-r-12.0"
+value {
+  " SDO-outerrorlevel"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+h 30
+major 4
+minor 6
+release 0
+w 110
+x 841
+y 70
+bgColor index 10
+controlPv "RMTEST-LED-01:OUTERRORLVL_rbv"
+fgAlarm
+fgColor index 16
+font "arial-medium-r-18.0"
+fontAlign "center"
+limitsFromDb
+newPos
+noExecuteClipMask
+nullColor index 0
+objType "monitors"
+showUnits
+useHexPrefix
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+h 16
+major 4
+minor 1
+release 1
+w 75
+x 731
+y 75
+autoSize
+bgColor index 0
+fgColor index 14
+font "arial-bold-r-14.0"
+useDisplayBg
+value {
+  "Readback:"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+h 23
+major 4
+minor 1
+release 0
+w 70
+x 731
+y 105
+3d
+botShadowColor index 11
+controlPv "RMTEST-LED-01:OUTERRORLVL_trig"
+fgColor index 25
+font "arial-medium-r-16.0"
+offColor index 3
+offLabel "Read"
+onColor index 4
+onLabel "Read"
+pressValue "1"
+topShadowColor index 1
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+h 30
+major 10
+minor 0
+release 0
+w 110
+x 841
+y 102
+bgColor index 3
+controlPv "RMTEST-LED-01:OUTERRORLVL"
+fgAlarm
+fgColor index 25
+fill
+font "arial-bold-r-16.0"
+precision 2
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+h 20
+major 4
+minor 4
+release 0
+w 120
+x 682
+y 166
+bgColor index 3
+botShadowColor index 11
+buttonLabel "DEV1"
+displayFileName {
+  0 "el2595"
+}
+fgColor index 14
+font "arial-medium-r-10.0"
+numDsps 1
+numPvs 4
+propagateMacros {
+  0 0
+}
+replaceSymbols {
+  0 1
+}
+symbols {
+  0 "DEVICE=RMTEST-LED-01"
+}
+topShadowColor index 1
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+h 20
+major 4
+minor 0
+release 0
+w 90
+x 802
+y 166
+bgColor index 3
+botShadowColor index 11
+controlPv "RMTEST-LED-01:DOXCONTROL:CONTROL__OUTPUT"
+fgColor index 25
+font "arial-medium-r-16.0"
+inconsistentColor index 0
+indicatorPv "RMTEST-LED-01:DOXCONTROL:CONTROL__OUTPUT"
+orientation "horizontal"
+selectColor index 3
+topShadowColor index 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+h 20
+major 4
+minor 0
+release 0
+w 20
+x 892
+y 166
+controlPv "RMTEST-LED-01:DOXSTATUS:STATUS__OUTPUTACTIVE"
+lineColor index 14
+lineWidth 2
+numBits 1
+offColor index 19
+onColor index 15
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+h 30
+major 4
+minor 0
+release 0
+w 50
+x 0
+y 0
+
+
+beginGroup
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+h 29
+major 4
+minor 0
+release 0
+w 48
+x 0
+y 0
+fillColor index 0
+lineColor index 1
+lineWidth 2
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+h 29
+major 4
+minor 0
+release 0
+w 48
+x 2
+y 2
+fillColor index 0
+lineColor index 11
+lineWidth 2
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+h 27
+major 4
+minor 0
+release 0
+w 47
+x 2
+y 2
+fill
+fillColor index 48
+lineColor index 49
+lineWidth 3
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+h 3
+major 4
+minor 0
+release 0
+w 4
+x 12
+y 6
+fill
+fillColor index 0
+lineColor index 1
+lineWidth 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+h 30
+major 4
+minor 1
+release 0
+w 50
+x 0
+y 0
+bgColor index 3
+fgColor index 14
+font "arial-bold-r-14.0"
+fontAlign "center"
+useDisplayBg
+value {
+  "led-with-sdosTop"
+}
+endObjectProperties
+
+endGroup
+
+
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+h 20
+major 4
+minor 1
+release 0
+w 90
+x 913
+y 388
+3d
+bgColor index 3
+botShadowColor index 11
+fgColor index 46
+font "arial-medium-r-16.0"
+label "EXIT"
+topShadowColor index 1
+endObjectProperties
