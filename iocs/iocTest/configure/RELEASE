@@ -1,7 +1,7 @@
 
 TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 ECASYN=$(TOP)/../..
-ASYN=/dls_sw/prod/R3.14.12.3/support/asyn/4-21
+ASYN=$(SUPPORT)/asyn/4-26
 
 EPICS_BASE=/dls_sw/epics/R3.14.12.3/base
 

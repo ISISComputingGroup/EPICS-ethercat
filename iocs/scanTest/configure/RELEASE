@@ -30,7 +30,7 @@ EPICS_BASE=/dls_sw/epics/R3.14.12.3/base
 
 #IOCBUILDER = /dls_sw/prod/common/python/iocbuilder/3-9
 #PYTHON = dls-python2.6
-ASYN=/dls_sw/prod/R3.14.12.3/support/asyn/4-21
+ASYN=$(SUPPORT)/asyn/4-26
 
 # Set RULES here if you want to take build rules from somewhere
 # other than EPICS_BASE:

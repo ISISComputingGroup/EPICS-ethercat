@@ -6,7 +6,7 @@
 # Common prefixes
 SUPPORT = /dls_sw/prod/R3.14.12.3/support
 # Module definitions
-ASYN = $(SUPPORT)/asyn/4-21
+ASYN=$(SUPPORT)/asyn/4-26
 ETHERCAT = $(SUPPORT)/ethercat/4-1
 # EPICS Base appears last
 EPICS_BASE = /dls_sw/epics/R3.14.12.3/base
